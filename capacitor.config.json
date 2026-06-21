@@ -1,0 +1,13 @@
+import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.midnight.cinema',
+  appName: 'Midnight Cinema',
+  webDir: 'www',
+  server: {
+    url: 'https://midnight-render-react.lovable.app/',
+    cleartext: true
+  }
+};
+
+export default config;
