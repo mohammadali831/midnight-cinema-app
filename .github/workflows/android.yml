@@ -3,7 +3,7 @@ name: Build Android APK
 on:
   push:
     branches:
-      - main
+      - main # اگر اسم برنچ اصلی‌ات چیز دیگری است (مثلاً master)، جایش بنویس
 
 jobs:
   build:
@@ -31,6 +31,7 @@ jobs:
       - name: Build Android APK
         run: |
           cd android
+          chmod +x gradlew
           ./gradlew assembleDebug
 
       - name: Upload Finished APK Artifact
