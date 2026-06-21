@@ -5,8 +5,12 @@ const config: CapacitorConfig = {
   appName: 'Midnight Cinema',
   webDir: 'www',
   server: {
-    url: 'https://midnight-render-react.lovable.app/',
-    cleartext: true
+    url: 'https://midnight-render-react.lovable.app',
+    cleartext: true,
+    allowNavigation: [
+      'midnight-render-react.lovable.app',
+      '*.lovable.app'
+    ]
   }
 };
 
