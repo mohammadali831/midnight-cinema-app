@@ -3,7 +3,7 @@ name: Build Android APK
 on:
   push:
     branches:
-      - main # اگر اسم برنچ اصلی‌ات چیز دیگری است (مثلاً master)، جایش بنویس
+      - main
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21' # 🚀 این‌جا را از 17 به 21 تغییر دادیم تا با کاپاسیتور مچ شود
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
